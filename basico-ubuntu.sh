@@ -47,3 +47,12 @@ cd orm-jpa
 
 # Subiendo la aplicación puerto por defecto.
 java -jar ~/orm-jpa/build/libs/app.jar > ~/orm-jpa/build/libs/salida.txt 2> ~/orm-jpa/build/libs/error.txt &
+
+# Agregando segunda app
+cd ~/
+git clone https://github.com/joseantt/hello-world-javalin.git
+cd hello-world-javalin/build/libs
+touch salida.txt
+touch error.txt
+
+java -jar ~/hello-world-javalin/build/libs/hola-mundo-1850-1.0-SNAPSHOT-all.jar > ~/hello-world-javalin/build/libs/salida.txt 2> ~/hello-world-javalin/build/libs/error.txt &
